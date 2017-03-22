@@ -1,1 +1,12 @@
-
+<h2>New Product</h2>
+<%= form_for @product do |f| %>
+    <%= f.text_field :name, placeholder: "Name" %>
+    <br><br>
+    <%= f.number_field :price, placeholder: "Price" %>
+    <br><br>
+    <%= f.number_field :inventory, placeholder: "Inventory" %>
+    <br><br>
+    <%= f.text_area :description, placeholder: "Description" %>
+    <br><br>
+    <%= f.submit "Make a Product!" %>
+<% end %>
